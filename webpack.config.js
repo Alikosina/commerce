@@ -3,15 +3,15 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.tsx",
-  devtool: "inline-source-map",
+  devtool: "source-map",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js",
-    publicPath: "./"
+    filename: "bundle.js"
   },
   devServer: {
-    contentBase: path.resolve(__dirname, "dist"),
+    contentBase: "dist",
     historyApiFallback: true,
+    watchContentBase: true,
     // compress: true,
     port: 9000
   },
