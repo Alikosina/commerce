@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+}
+.app {
+  min-height: 100vh;
+  background-color: #f7f7f7;
+  padding: 10px;
+  &-container {
+    padding: 0;
+  }
+}
