@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import CatalogItem from "../../components/CatalogItem";
+import CatalogItem from "@components/CatalogItem";
 
 export default class Catalog extends React.Component {
   render() {

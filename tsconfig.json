@@ -17,6 +17,13 @@
     "checkJs": false,
     "outDir": "./dist/",
     "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "@app/*": ["src/*"],
+      "@containers/*": ["src/containers/*"],
+      "@components/*": ["src/components/*"],
+      "@modules/*": ["src/modules/*"]
+    },
     "sourceMap": true,
     "noImplicitAny": true,
     "module": "commonjs",

@@ -73,6 +73,12 @@ module.exports = {
     // new ExtractTextPlugin()
   ],
   resolve: {
-    extensions: [".js", ".jsx", ".ts", ".tsx"]
+    extensions: [".js", ".jsx", ".ts", ".tsx"],
+    alias: {
+      "@app": path.resolve(__dirname, "./src"),
+      "@containers": path.resolve(__dirname, "./src/containers"),
+      "@components": path.resolve(__dirname, "./src/components"),
+      "@modules": path.resolve(__dirname, "./src/modules")
+    }
   }
 };

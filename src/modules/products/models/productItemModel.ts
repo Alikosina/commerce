@@ -1,5 +1,6 @@
 export interface ProductItemModel {
   id: number;
+  code: number;
   link: string;
   imgUrl: string;
   availability: boolean;

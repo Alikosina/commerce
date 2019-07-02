@@ -1,13 +1,16 @@
 import * as React from "react";
 import { connect } from "react-redux";
-import { fetchProducts } from "../../modules/products/productsActions";
+import { fetchProducts } from "@modules/products/productsActions";
 import { Container, Row, Col } from "react-bootstrap";
-import Catalog from "../Catalog";
+import Catalog from "@containers/Catalog";
 import "./App.scss";
 
-class App extends React.Component {
+interface AppPropsModel {
+  fetchProducts: () => void;
+}
+
+class App extends React.Component<AppPropsModel> {
   componentDidMount() {
-    // @ts-ignore
     this.props.fetchProducts();
   }
 
