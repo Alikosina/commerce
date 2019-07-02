@@ -2,8 +2,9 @@ import {
   FETCH_PRODSUCTS_SUCCESS,
   FETCH_PRODSUCTS_FAILED
 } from "./productsActionsConst";
+import { ProductItemModel } from "./models";
 
-const initialState: any[] = [];
+const initialState: ProductItemModel[] = [];
 
 export default (
   state = initialState,

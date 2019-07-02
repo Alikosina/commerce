@@ -1,0 +1,1 @@
+export { ProductItemModel } from "./productItemModel";
